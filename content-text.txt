@@ -8,21 +8,21 @@ Description
 grep -r string /file/
 This command with search for “string” in the /file directory recursively 
 grep -c ‘find’ example.txt
-This command can report/count  the number of times ‘find’ matches for each file. 
+This command can report/count  the number of times ‘find’ matches for each file 
 grep “string” example.html
 Searches for a “string” in the specified  file example.html
 grep -i “string” example.html
-Searches for the word “string” case insensitively. It will search for words like “STRING”, “String”. 
+Searches for the word “string” case insensitively. It will search for words like “STRING”, “String” 
 grep “string” file*.*
 Searches for a string in multiple files with different extensions. This command will search in all files like file.html, file.php, file.txt, etc.. 
 grep “firstword.*lastword” example.html
-Searches for all the patterns that start with “firstword” and ends with “lastword” and anything in between. 
-grep -n “string” example.htm
-This command displays the line number which contains “string” in the file example.hmtl
+Searches for all the patterns that start with “firstword” and ends with “lastword” and anything in between 
+grep -n “string” example.html
+This command displays the line number which contains “string” in the file example.html
 grep -color “string” example.html
-This command will highlight the matches of “string”.
+This command will highlight the matches of “string”
 grep -v string /tutorial/example2
-This command lists all of the lines of the file /tutorial/example2 that does not contain the specific word “string”.
+This command lists all of the lines of the file /tutorial/example2 that does not contain the specific word “string”
 grep ^string /tutorial/example2
 This command displays all the lines which start with “string” word in the file /tutorial/example2 
 grep string$ /tutorial/example2
