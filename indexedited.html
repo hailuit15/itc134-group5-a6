@@ -187,7 +187,56 @@ article {
 <p>//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
 <br>
 <h3>Examples</h3>
-<p>//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+<table class="greptable">
+        <tr>
+            <th>Grep Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>grep -r string /file/</td>
+            <td>This command with search for “string” in the /file directory recursively</td>    
+        </tr> 
+        <tr>
+            <td>grep -c ‘find’ example.txt</td>
+            <td>This command can report/count  the number of times ‘find’ matches for each file</td> 
+        </tr>
+        <tr>
+           <td>grep “string” example.html</td>
+           <td>Searches for a “string” in the specified  file example.html</td>  
+        </tr>
+        <tr>
+           <td>grep -i “string” example.html</td>
+           <td>Searches for the word “string” case insensitively. It will search for words like “STRING”, “String”</td>  
+        </tr>
+        <tr>
+           <td>grep “string” file*.*</td>
+           <td>Searches for a string in multiple files with different extensions. This command will search in all files like file.html, file.php, file.txt, etc.. </td>  
+        </tr>
+        <tr>
+           <td>grep “firstword.*lastword” example.html</td>
+           <td>Searches for all the patterns that start with “firstword” and ends with “lastword” and anything in between</td>  
+        </tr>
+        <tr>
+           <td>grep -n “string” example.html</td>
+           <td>This command displays the line number which contains “string” in the file example.hmt</td>  
+        </tr>
+        <tr>
+           <td>grep -color “string” example.html</td>
+           <td>This command will highlight the matches of “string”</td>  
+        </tr>
+        <tr>
+           <td>grep -v string /tutorial/example2</td>
+           <td>This command lists all of the lines of the file /tutorial/example2 that does not contain the specific word “string”</td>  
+        </tr>
+       <tr>
+           <td>grep ^string /tutorial/example2</td>
+           <td>This command displays all the lines which start with “string” word in the file /tutorial/example2 </td>  
+        </tr>
+       <tr>
+           <td>grep string$ /tutorial/example2</td>
+           <td>This command displays all the lines of /tutorial/example2  that end with “string”</td>  
+      </tr>
+</table>
 </article>
 
 
