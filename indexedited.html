@@ -183,8 +183,43 @@ article {
 <p>Searches for any lines that end in a period.</p>
 
 <br>
-<h3>Prefix</h3> <!-- Table of options -->
-<p>//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+<h3>Options</h3> <!-- Table of options -->
+<p>In the options portion of the command, we can add options which help us find exactly what we need and output it in a way that's helpful. Here's a table of some of the most commonly used, a full explanation of all the options available can be found <a href="https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options" target="_blank">here</a></p>
+
+<table class="greptable">
+  <tr>
+    <th>Option</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-c</td>
+    <td>Instead of the normal output, print a count of matching lines for each input file</td>
+  </tr>
+  <tr>
+    <td>--color</td>
+    <td>Display the matching strings in color</td>
+  </tr>
+  <tr>
+    <td>-i</td>
+    <td>Ignore case distinctions in both the pattern and the input files</td>
+  </tr>
+  <tr>
+    <td>-n</td>
+    <td>Prefix each line of output with the line number within its input file</td>
+  </tr>
+  <tr>
+    <td>-r</td>
+    <td>Read all files under each directory, recursively, following symbolic links only if they are on the command line</td>
+  </tr>
+  <tr>
+    <td>-v</td>
+    <td>Invert the sense of matching, to select non-matching lines</td>
+  </tr>
+  <tr>
+    <td>-w</td>
+    <td>Select only those lines containing matches that form whole words</td>
+  </tr>
+</table>
 <br>
 <h3>Examples</h3>
 <table class="greptable">
