@@ -1,0 +1,37 @@
+(1) --look for "mountain" in both files
+jennvillacis:~/workspace $ grep "mountain" mountain.txt mountain-names.txt
+
+mountain.txt:this is line has no upper case words, blue mountain red mountain snow snow mountain. 
+mountain.txt:There is 1 Blue Mountain, 2 Red mountains, and 5 Mountains covered in snow! 
+mountain-names.txt:There is one blue mountain. It’s name is Blue Mountain.
+mountain-names.txt:there are 2 red mountains, their names are Mount Rust, and Fire Mountain.
+mountain-names.txt:There are five mountains covered in snow, Mt. Rainer, Blue Mountain, Mount Rust, Craighorn, and Alpental. 
+
+(2) --return the line number of matches
+jennvillacis:~/workspace $ grep -n "mountain" mountain.txt
+
+2:this is line has no upper case words, blue mountain red mountain snow snow mountain. 
+5:There is 1 Blue Mountain, 2 Red mountains, and 5 Mountains covered in snow! 
+
+(3) --count the number of matches in a file(s) and output a number.
+jennvillacis:~/workspace $ grep -c "mountain" mountain.txt mountain-names.txt
+
+mountain.txt:2
+mountain-names.txt:3
+
+(4) --use the -i option to make the command case insensitve. combine it with the count option.
+jennvillacis:~/workspace $ grep -ci "mountain" mountain.txt mountain-names.txt
+
+mountain.txt:3
+mountain-names.txt:3
+
+(5) --use the v option to return lines that dont match. Combine with case insensitivity and numbered lines.
+$ grep -vin "mountain" mountain.txt mountain-names.txt
+
+mountain.txt:1:<p>
+mountain.txt:4:Another line of text for testing. 
+mountain.txt:6:</p>
+mountain-names.txt:1:<p>
+mountain-names.txt:5:</p>
+
+
