@@ -1,0 +1,5 @@
+<p>
+There is one blue mountain. It’s name is Blue Mountain.
+there are 2 red mountains, their names are Mount Rust, and Fire Mountain.
+There are five mountains covered in snow, Mt. Rainer, Blue Mountain, Mount Rust, Craighorn, and Alpental. 
+</p>

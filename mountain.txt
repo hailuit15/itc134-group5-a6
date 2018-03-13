@@ -1,0 +1,6 @@
+<p>
+this is line has no upper case words, blue mountain red mountain snow snow mountain. 
+This is a line with upper case words, Blue Mountain Red Mountain snow Snow Mountain.
+Another line of text for testing. 
+There is 1 Blue Mountain, 2 Red mountains, and 5 Mountains covered in snow! 
+</p>
