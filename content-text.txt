@@ -1,5 +1,5 @@
 What is Grep??
-Grep stands for global regular expression print “ it processes text line by line and prints lines that match the specified pattern.
+Grep stands for global regular expression print it processes text line by line and prints lines that match the specified pattern.
 It provides the ability to efficiently filter the content of a file for display. On this page you will find examples of different ways
 to use grep! 
 
@@ -19,7 +19,7 @@ grep “firstword.*lastword” example.html
 Searches for all the patterns that start with “firstword” and ends with “lastword” and anything in between 
 grep -n “string” example.html
 This command displays the line number which contains “string” in the file example.html
-grep -color “string” example.html
+grep --color “string” example.html
 This command will highlight the matches of “string”
 grep -v string /tutorial/example2
 This command lists all of the lines of the file /tutorial/example2 that does not contain the specific word “string”
