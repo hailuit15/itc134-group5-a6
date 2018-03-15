@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <Title>Grep</Title>
-    <link href="CSS/cssA6.css" type="text/css"
+    <Title>Grep-The Linux Command</Title>
+    <link href="A6CSS.css" type="text/css"
           rel="stylesheet"/>
         
     </head>
@@ -29,28 +29,43 @@
 <br>
 <br>
 	
-<h4>ITC134-Group5-A6-Project</h4>
-<h4>Group Members</h4>
+<br>
+<br>    
+<h4><u>Sumamry</u></h4><h5>Seattle Central College</h5>
+<h5>Course: Version Control</h5>    
+<h5>ITC134-Group5-A6-Project</h5>
+<h5>winter, 2018</h5>
+<h5>Instrctor: Bill Newman</h5>
+    <br>
+    <br>
+    <br>
+    
+    
+<h4><u>Group Members</u></h4>
   <ul>
-    <li>1. Chris</li>
-    <li>2. Jennifer</li>
-    <li>3. Carissa</li>
-    <li>4. Hailemariam</li>
+    <li>Chris Guffin</li>
+    <li>Jennifer Villacis</li>
+    <li>Carissa Wagner</li>
+    <li>Hailemariam Abdi</li>
 	</ul>
   
-<br>
-<br>
-<br>
-<br>
-
-    <h4>Links</h4>
-       
-    <ul>
-    <li><a href="#">Link1</a></li>
-    <li><a href="#">Link2</a></li>
-    <li><a href="#">Link3</a></li>
+    <br>
+    <br>
+    
+    <h4><u>Content</u></h4>
+  <ul>
+    <li><u>What is Grep?</u></li>
+    <li><u>Functions</u></li>
+    <li><u>Syntax Classification</u></li>
+    <li><u>Regular Expressions</u></li>
+ <li><u>Options</u></li>
+ <li><u>Examples</u></li>
+    <li><u>Reference</u></li>
   </ul>
 	
+    <br>
+
+    	
 	<br>
 	<br>
 	<br>
@@ -60,20 +75,11 @@
 </nav>
 
 <article>
-    <h3>Contents</h3>
     
-  <ul>
-    <li>Introduction to -grep</li>
-    <li>Functions</li>
-    <li>Syntax classification</li>
-    <li>pattern</li>
-    <li>Prefix</li>
-    <li>Examples</li>
-  </ul>
-	
-    <br>
-	<h3>Introduction to -grep </h3>
-  <p></p>
+	<h3>What is Grep? </h3>
+  <p>Grep stands for global regular expression print “ it processes text line by line and prints lines that match the 
+	  specified pattern. It provides the ability to efficiently filter contents of a file for display. On this page you will find examples 
+	  of different ways to use grep!</p>
     <a href="https://linux.die.net/">Linux Documentation</a>
 	<br>
 	<h3>Functions</h3>
@@ -81,19 +87,19 @@
      <a href="https://linux.die.net/">Linux Documentation</a>
 	<br>
 	<h3>Syntax Classification</h3>
-  <p></p>
+  <p>grep [OPTIONS] PATTERN [FILE...]</p>
      <a href="https://linux.die.net/">Linux Documentation</a>
 <br>
 	<h3>Regular expressions and grep</h3>
 <p>In the pattern portion of the grep command, we put a pattern to be searched for in the given file. For example, </p>
 
-<p class='code'>grep ‘kittens’ test_file.txt </p>
+<p class='code1'>grep ‘kittens’ test_file.txt </p>
 
 <p>will search test_file.txt for the pattern ‘kitten’ and return any lines that contain it. </p>
 
 <p>But what if we want to search for any word that starts with ‘k’ and ends with ‘s’? Or for ‘kittens’, but only if it’s at the beginning of a line? Or if we want to find all phone numbers in a document? Or find all blank lines? Regular expressions give us a lot more power to search for exactly what we want.</p>
 
-<h4>^ and $</h4>
+<p class='code'>^ and $ </p>
 
 <p>If we want to specify if the pattern we’re searching for occurs at the beginning or the end of a line, we can use ^ and $ (respectively). These are called anchors. For example, </p>
 
@@ -105,7 +111,7 @@
 
 <p>Will search for lines that end with ‘A’. If the caret (^) isn’t at the beginning of the pattern, or the dollar sign ($) isn’t at the end of a pattern, they won’t be considered as anchors, and will just be searched for regularly.</p>
 
-<h4>[] and [^]</h4>
+<p class='code'>[] and [^]</p>
 
 <p>Using square brackets, we can specify a range of characters that we want to match or exclude for one character. This can be done by listing the characters, like [aeiou], or by using a hyphen (‘-’) to specify a range, like [0-9]. Adding a caret to the beginning of the bracket means that the character should not be any of the specified characters. So</p>
 
@@ -117,7 +123,7 @@
 
 <p>Will search for characters that aren’t numbers or letters.</p>
 
-<h4>. and *</h4>
+<p class='code'>. and *</p>
 
 <p>To be more general in our search, we can use a period (.)  to stand for any single character, and the asterisk (*) will match zero or more repetitions of the preceding character. </p>
 
@@ -131,7 +137,7 @@
 
 <p class='code'>grep AA*</p>
 
-<h4>\{x,y\}, \{x\}, and \{x,\}</h4>
+<p class='code4'>\{x,y\}, \{x\}, and \{x,\}</p>
 
 <p>We saw that the asterisk (*) finds any number of repetitions of a character, but what if we want a specific number of repetitions? Or a range? We can use a backslash followed by a bracket (\{), containing our range to specify this. For example</p>
 
@@ -148,6 +154,7 @@
 <p>Will search for lines with 5 or more digits in a row. </p>
 
 <h4> The backslash '\' </h4>
+<p class='code'>The backslash '\'</p>
 
 <p>You may be wondering, what if I want to search for a dollar sign ($) in my file? Or a period? Or an asterisk? The backslash character (\) allows us to take away the special meaning of the character after it. So</p>
 
@@ -249,16 +256,34 @@
            <td>This command displays all the lines of /tutorial/example2  that end with “string”</td>  
       </tr>
 </table>
-    <h3>Reading references</h3>
+    
+    <h3>Additional Examples</h3>
+    <img src="images/1.png" alt="Grep1" width="150" height="100" />    
+    <img src="images/2.PNG" alt="Grep2" width="150" height="100" />
+    <img src="images/2.PNG" alt="Grep3" width="150" height="100" />
+    <img src="images/2.PNG" alt="Grep4" width="150" height="100" />
+    <img src="images/2.PNG" alt="Grep5" width="150" height="100" />
+
+    
+    
+    
+    
+    
+    
+   
+    
+    <h2>References</h2>
+    <h3>Web links</h3>
     <a href="https://swcarpentry.github.io/shell-novice/reference">Unix Commands Summary</a> <br>
     <a href="http://opensourceforu.com/2012/06/beginners-guide-gnu-grep-basics-regular-expressions/">Grep:Basics and Regular Expressions</a> <br>
     <a href="https://www.tutorialspoint.com/unix_commands/grep.htm">grep -Unix, Linux Command</a> <br><br>
-    <h3>Youtube Lessons</h3>
+    <h3>Youtube Links</h3>
     <iframe width="300" height="200" src="https://www.youtube.com/embed/o1C2Fqjrqgs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     
 
 </article>
+    
 
 <footer>Copyright &copy; ITC134-Group5-A6-Project</footer>
 
@@ -270,5 +295,3 @@
     
 
 </html>
-
-
