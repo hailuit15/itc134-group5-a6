@@ -55,7 +55,6 @@
     <h4><u>Content</u></h4>
   <ul>
     <li><u>What is Grep?</u></li>
-    <li><u>Functions</u></li>
     <li><u>Syntax Classification</u></li>
     <li><u>Regular Expressions</u></li>
  <li><u>Options</u></li>
@@ -65,7 +64,6 @@
 	
     <br>
 
-    	
 	<br>
 	<br>
 	<br>
@@ -82,13 +80,9 @@
 	  of different ways to use grep!</p>
     <a href="https://linux.die.net/">Linux Documentation</a>
 	<br>
-	<h3>Functions</h3>
-  <p></p>
-     <a href="https://linux.die.net/">Linux Documentation</a>
 	<br>
 	<h3>Syntax Classification</h3>
   <p>grep [OPTIONS] PATTERN [FILE...]</p>
-     <a href="https://linux.die.net/">Linux Documentation</a>
 <br>
 	<h3>Regular expressions and grep</h3>
 <p>In the pattern portion of the grep command, we put a pattern to be searched for in the given file. For example, </p>
@@ -240,7 +234,7 @@
            <td>This command displays the line number which contains “string” in the file example.hmt</td>  
         </tr>
         <tr>
-           <td>grep -color “string” example.html</td>
+           <td>grep --color “string” example.html</td>
            <td>This command will highlight the matches of “string”</td>  
         </tr>
         <tr>
@@ -256,24 +250,27 @@
            <td>This command displays all the lines of /tutorial/example2  that end with “string”</td>  
       </tr>
 </table>
-    
-    <h3>Additional Examples</h3>
+
+<h3>Interactive Cloud9 Examples</h3>
+<p>Looking for examples you can use on your own? Try downloading <a href="mountain.txt" target="_blank">these</a> <a href="mountain-names.txt" target="_blank">files</a> to an environment with a Unix command line. Here are some example commands so you can see how grep works for yourself:</p>
+<ul>
+  <li class="code">grep "mountain" mountain.txt mountain-names.txt</li>
+  <li class="code">grep -n "mountian" mountain.txt</li>
+  <li class="code">grep -ci "mountain" mountain.txt mountain-names.txt</li>
+  <li class="code">grep -vin "mountain" mountain.txt mountain-names.txt</li>
+  <li class="code">grep -i "^this" mountain.txt</li>
+  <li class="code">grep -i "[0-9] red mountains" mountain.txt</li>
+</ul> 
+
+    <h3>Example Screenshots</h3>
     <img src="images/1.png" alt="Grep1"/ width=97%>    
     <img src="images/2.PNG" alt="Grep2"/>
     <img src="images/2.PNG" alt="Grep3"/>
     <img src="images/2.PNG" alt="Grep4"/>
     <img src="images/2.PNG" alt="Grep5"/>
 
-    
-    
-    
-    
-    
-    
-   
-    
-    <h2>References</h2>
-    <h3>Web links</h3>
+
+    <h3>Reading references</h3>
     <a href="https://swcarpentry.github.io/shell-novice/reference">Unix Commands Summary</a> <br>
     <a href="http://opensourceforu.com/2012/06/beginners-guide-gnu-grep-basics-regular-expressions/">Grep:Basics and Regular Expressions</a> <br>
     <a href="https://www.tutorialspoint.com/unix_commands/grep.htm">grep -Unix, Linux Command</a> <br><br>
